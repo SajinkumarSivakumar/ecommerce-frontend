@@ -1,0 +1,173 @@
+/* FULL PAGE BACKGROUND */
+
+.login-wrapper {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* Clean ecommerce dark background */
+  background:
+          linear-gradient(rgba(10,10,10,0.75), rgba(10,10,10,0.85)),
+          url('https://images.unsplash.com/photo-1555529669-e69e7aa0ba9a');
+
+  background-size: cover;
+  background-position: center;
+}
+
+
+/* GLASS LOGIN CARD */
+
+.login-card {
+  backdrop-filter: blur(18px);
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.2);
+
+  padding: 40px;
+  width: 360px;
+  border-radius: 20px;
+  box-shadow: 0 25px 60px rgba(0,0,0,0.4);
+  text-align: center;
+  animation: fadeIn 0.6s ease;
+
+  color: white;
+}
+
+
+/* BRAND LOGO */
+
+.logo {
+  font-size: 42px;
+  margin-bottom: 10px;
+}
+
+
+/* BRAND NAME */
+
+.brand {
+  font-size: 28px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+
+/* HEADINGS */
+
+.login-card h3 {
+  margin-top: 10px;
+  font-weight: 400;
+}
+
+.login-card p {
+  color: #ddd;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+
+/* INPUT FIELDS */
+
+.login-card input {
+  width: 100%;
+  padding: 14px;
+  margin-bottom: 18px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+
+  background: rgba(255,255,255,0.15);
+  color: white;
+}
+
+.login-card input::placeholder {
+  color: #ddd;
+}
+
+.login-card input:focus {
+  box-shadow: 0 0 0 2px #ff4d7e;
+}
+
+
+/* PASSWORD BOX */
+
+.password-box {
+  position: relative;
+}
+
+.eye {
+  position: absolute;
+  right: 12px;
+  top: 14px;
+  cursor: pointer;
+  color: #fff;
+}
+
+
+/* BUTTON */
+
+.login-card button {
+  width: 100%;
+  padding: 14px;
+  background: linear-gradient(to right, #ff4d7e, #ff7a18);
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-weight: bold;
+}
+
+.login-card button:hover {
+  transform: scale(1.03);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+
+/* SECURE TEXT */
+
+.secure {
+  font-size: 12px;
+  margin-top: 10px;
+  color: #ccc;
+}
+
+
+/* REGISTER TEXT */
+
+.register {
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.register a {
+  color: #ff7a18;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+
+/* ERROR */
+
+.error {
+  font-size: 12px;
+  color: #ffb3b3;
+  text-align: left;
+  margin-top: -10px;
+  margin-bottom: 10px;
+}
+
+
+/* ANIMATION */
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

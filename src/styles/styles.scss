@@ -1,0 +1,1002 @@
+/* ----------------------------------------------------------------------------------------------------- */
+/*  @ Import/write your custom styles here.
+/*  @ Styles from this file will override 'vendors.scss' and Fuse's base styles.
+/* ----------------------------------------------------------------------------------------------------- */
+@import 'ag-grid-community/dist/styles/ag-grid.css';
+@import 'ag-grid-community/dist/styles/ag-theme-alpine.css';
+@import 'ag-grid-community/dist/styles/ag-theme-material.css';
+@import 'ag-grid-community/dist/styles/ag-theme-balham.min.css';
+@import 'ag-grid-autocomplete-editor/dist/main.css';
+
+// Formsio
+.formcomponent {
+    @apply bg-amber-600 text-white #{!important}
+}
+
+//@import 'ag-grid-autocomplete-editor/dist/main.css';
+
+.selectionHint {
+    @apply pl-2 truncate font-bold;
+}
+
+.mat-tab-body-content {
+    padding: 10px 0 0 0 !important;
+}
+
+textarea {
+    padding: 11px 0;
+}
+
+.small-btn {
+    height: 34px !important;
+    min-height: 34px !important;
+    max-height: 34px !important;
+    color: white !important;
+}
+
+.ag-header-cell-text {
+    flex: 1;
+}
+
+.ag-theme-alpine {
+    --ag-line-height: 16px;
+    --ag-header-height: 20px;
+    --ag-footer-height: 10px;
+
+    --ag-header-foreground-color: #ffffff;
+    --ag-header-background-color: #5d718d;
+    --ag-grid-size: 1px;
+    --ag-list-item-height: 5px;
+    font-weight: 500;
+}
+
+.ag-theme-alpine .ag-row {
+    border-width: 0.5px !important;
+    border-color: #f3f3f3;
+    height: 35px;
+    font-size: 13px;
+}
+
+.ag-theme-alpine .ag-paging-panel {
+    height: 40px; /* Adjust the height as needed */
+}
+
+//.ag-theme-alpine .ag-root {
+//    border-radius: 20px;
+//    overflow: hidden;
+//}
+
+//.ag-theme-alpine .ag-header-cell {
+//    border: 1px solid #cecece;
+//}
+
+.ag-theme-balham {
+    --ag-line-height: 16px;
+    --ag-header-height: 20px;
+    --ag-header-foreground-color: #ffffff;
+    --ag-header-background-color: #5d718d;
+    --ag-header-cell-hover-background-color: #5e8bdc;
+    --ag-header-cell-moving-background-color: #5e8bdc;
+    --ag-grid-size: 1px;
+    --ag-list-item-height: 10px;
+
+    --ag-range-selection-border-color: #769ada;
+    --ag-range-selection-border-style: dashed;
+    --ag-range-selection-background-color: #85a4dc;
+    /* these next 3 variables control the background colour when 2, 3 or 4+ ranges overlap,
+       and should have progressively greater opacity to look realistic - see the docs below
+       for the correct formulas to use */
+    --ag-range-selection-background-color-2: #85a4dc;
+    --ag-range-selection-background-color-3: #81a2de;
+    --ag-range-selection-background-color-4: #7f9fda;
+
+    --ag-range-selection-highlight-color: rgb(60, 188, 0, 0.3);
+
+    /* disable all borders */
+    --ag-borders: none;
+    /* then add back a border between rows */
+    --ag-row-border-style: solid;
+    --ag-row-border-color: rgb(222, 222, 222);
+    --ag-odd-row-background-color: #fffbef;
+    font-weight: 500;
+    font-family: "Inter var", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.ag-input-field-input {
+    color: #606060 !important;
+}
+
+.ag-cell {
+    padding-top: 2px;
+}
+
+.ag-theme-balham .ag-row {
+    border-width: 0.5px !important;
+    font-size: 13px;
+}
+
+::ng-deep .mat-tooltip {
+    white-space: pre-line !important;
+}
+
+.fuse-mat-dense .mat-form-field-flex {
+    min-height: 34px !important;
+    height: 34px !important;
+}
+
+.fuse-mat-custom .mat-form-field-flex {
+    min-height: 28px !important;
+    height: 28px !important;
+}
+
+.mat-form-field.mat-form-field-appearance-fill .mat-form-field-wrapper {
+    margin-bottom: 0 !important;
+}
+
+.mat-form-field.mat-form-field-appearance-fill .mat-form-field-wrapper .mat-form-field-flex .mat-form-field-infix textarea.mat-input-element {
+    display: flex;
+    align-self: stretch;
+    min-height: 0px;
+    height: auto;
+    margin: -3px 0;
+    padding-top: 8px;
+    padding: 0 6px 0 0;
+    transform: none;
+}
+
+.big-text {
+    font-size: 28px;
+}
+
+.scroll-spy:hover {
+    color: #cb8107;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.mat-tab-label-container {
+    padding: 0 !important;
+    padding-top: 10px !important;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+}
+
+
+mat-tab-group .mat-tab-labels {
+    justify-content: flex-start;
+}
+
+mat-tab-header {
+    align-self: flex-start;
+}
+
+// Carousel Plugin
+
+.carousel-arrow-next {
+    right: -15px !important;
+}
+
+.carousel-arrow-prev {
+    left: -15px !important;
+}
+
+.carousel-arrow {
+    width: 30px !important;
+    height: 30px !important;
+    background-size: 20px !important;
+    margin-top: -13px !important;
+    border: 1px solid #e6e6e6 !important;
+}
+
+.cdk-global-overlay-wrapper {
+    //z-index: 1001;
+}
+
+// Breadcrumbs
+.breadcrumbnav li {
+    display: inline-block;
+    font-size: larger;
+    font-weight: bold;
+
+}
+
+
+.breadcrumbnav li:first-child::after {
+    content: " >";
+
+}
+
+.breadcrumbnav li:last-child::after {
+    content: "     ";
+}
+
+.breadcrumbnav li:last-child::before {
+    content: "     ";
+}
+
+.homeicon {
+    padding-top: 6px;
+}
+
+.reportsbreadcrumb li {
+    display: inline-block;
+    font-size: medium;
+    font-weight: bold;
+
+}
+
+.reportsbreadcrumb li:first-child::after {
+    content: " >";
+
+}
+
+.reportsbreadcrumb li:last-child::after {
+    content: "     ";
+}
+
+.reportsbreadcrumb li:last-child::before {
+    content: "     ";
+}
+
+//geofence
+
+.geofence {
+
+    box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.1);
+}
+
+.geofencetitle {
+    box-shadow: 8px 8px 8px 0 rgba(3, 2, 1, 0.1);
+}
+
+.orginfo {
+    box-shadow: 8px 8px 8px 0 rgba(3, 2, 1, 0.1);
+
+}
+
+.map {
+    box-shadow: 8px 8px 8px 0 rgba(3, 2, 1, 0.1);
+}
+
+dummp-type-add{
+    width:100%
+}
+
+.cusbutton{
+    background: #f59e0b;
+    color: black;
+    padding: 8px;
+    height: 0px;
+    padding: 9px;
+    color: white;
+    margin: 0px;
+    border-radius: 4px;
+    line-height: 0px;
+}
+formio {
+    width: 100%;
+    height: 100%;
+}
+$grey: #e7e9ed;
+$grey-lighter: #f6f7f9;
+$grey-dark: #f3f3f3;
+$dark: #50596c;
+$blue: #3f86ca;
+$primary-color: #50596c !default;
+/*! Based on Spectre.css v0.4.5 | MIT License | github.com/picturepan2/spectre */
+.ngx {
+    &-container {
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+    }
+
+    //commented out by abishek, use inline styles as this is affecting all tables across the entire application !
+    //&-table {
+    //    color: $primary-color;
+    //    border-collapse: collapse;
+    //    border-spacing: 0;
+    //    display: table;
+    //    white-space: nowrap;
+    //    font-size: 14px;
+    //    text-align: left;
+    //    width: 100%;
+    //
+    //    td {
+    //        border-bottom: 1px solid $grey;
+    //        padding: 12px 6px;
+    //    }
+    //
+    //    th {
+    //        padding: 12px 6px;
+    //        border: 2px solid rgb(245 245 245) !important;
+    //        background-color: #1d4ed8;
+    //        font-weight: 500;
+    //        color: #f9f9f9;
+    //    }
+    //
+    //    &__table-row--selected, &__table-col--selected, &__table-cell--selected {
+    //        background: $grey !important;
+    //    }
+    //
+    //    &__table-no-results {
+    //        text-align: center;
+    //    }
+    //
+    //    &__table-loader-wrapper {
+    //        display: flex;
+    //        justify-content: center;
+    //        margin-top: 50px;
+    //    }
+    //
+    //    &__body-loading:hover {
+    //        background: 0 !important;
+    //    }
+    //
+    //    &__table-loader {
+    //        animation: spin .6s linear infinite;
+    //        border: 1px solid $grey;
+    //        border-radius: 50%;
+    //        border-top-color: $primary-color;
+    //        height: 1.8rem;
+    //        width: 1.8rem;
+    //    }
+    //
+    //    &__body-empty {
+    //    }
+    //
+    //    &__sort-header {
+    //    }
+    //
+    //    &__table-menu {
+    //    }
+    //
+    //    &__table-row-context-menu {
+    //        position: absolute;
+    //    }
+    //
+    //    &__header {
+    //    }
+    //
+    //    &__header-cell-additional-actions {
+    //    }
+    //
+    //    &__header-search {
+    //        -webkit-appearance: none;
+    //        -moz-appearance: none;
+    //        background: #fff none;
+    //        border: .05rem solid $grey;
+    //        border-radius: .1rem;
+    //        color: $primary-color;
+    //        display: block;
+    //        font-size: .8rem;
+    //        height: 1.47rem;
+    //        line-height: 1rem;
+    //        max-width: 100%;
+    //        outline: 0;
+    //        padding: .15rem .3rem;
+    //        position: relative;
+    //        width: 97%;
+    //    }
+    //
+    //    &__header-cell {
+    //        position: relative;
+    //
+    //        .pointer {
+    //            cursor: pointer;
+    //        }
+    //    }
+    //
+    //    &__horizontal-scroll {
+    //        display: block;
+    //        overflow-x: scroll;
+    //        white-space: nowrap;
+    //
+    //        &::-webkit-scrollbar {
+    //            -webkit-appearance: none;
+    //            width: 3px;
+    //            height: 10px;
+    //        }
+    //
+    //        &::-webkit-scrollbar-thumb {
+    //            background-color: grey;
+    //        }
+    //    }
+    //
+    //    &__column-resizer {
+    //        background-color: $grey;
+    //        cursor: col-resize;
+    //        display: block;
+    //        height: 20px;
+    //        margin-top: 10px;
+    //        position: absolute;
+    //        padding: 0;
+    //        right: 0;
+    //        top: 0;
+    //        width: 2px;
+    //    }
+    //
+    //    &__table--borderless > {
+    //        tbody > tr > td, thead > tr > th {
+    //            border-bottom: 0 !important;
+    //        }
+    //    }
+    //
+    //    &__table--hoverable > tbody tr:hover {
+    //        background: $grey-lighter;
+    //    }
+    //
+    //    &__table--striped > tbody tr:nth-of-type(odd) {
+    //        background: $grey-lighter;
+    //    }
+    //
+    //    &__table--tiny > {
+    //        tbody > tr > td, thead > tr > th {
+    //            border-bottom: 1px solid $grey;
+    //            padding: 4px 7px;
+    //        }
+    //    }
+    //
+    //    &__table--normal > {
+    //        tbody > tr > td, thead > tr > th {
+    //            border-bottom: 1px solid #eeeff2;
+    //            padding: 6px 6px;
+    //            border-left: 2px solid #eeeff2;
+    //            font-weight: 500;
+    //            font-size: 14px;
+    //            padding-left: 9px;
+    //            padding-right: 9px;
+    //        }
+    //    }
+    //
+    //    &__table--big > {
+    //        tbody > tr > td, thead > tr > th {
+    //            border-bottom: 1px solid $grey;
+    //            padding: 12px 8px;
+    //        }
+    //    }
+    //
+    //    &__table--dark {
+    //        background-color: $dark;
+    //        color: $grey-lighter;
+    //
+    //        & > tbody tr:hover {
+    //            color: $dark;
+    //        }
+    //
+    //        &.ngx-table__table--striped > tbody tr:nth-of-type(odd) {
+    //            background: $grey-lighter;
+    //            color: $dark;
+    //        }
+    //
+    //        &-pagination {
+    //            & ::ng-deep .ngx-pagination .current {
+    //                background: $grey-lighter;
+    //                color: $dark;
+    //            }
+    //
+    //            & ::ng-deep pagination-template > ul {
+    //                -webkit-padding-start: 0;
+    //                -webkit-margin-before: 0;
+    //            }
+    //
+    //            & ::ng-deep pagination-template > ul > li {
+    //                border: 1px solid $grey;
+    //                background: $dark;
+    //            }
+    //
+    //            & ::ng-deep pagination-template > ul > li.current {
+    //                border: 1px solid $dark;
+    //            }
+    //
+    //            & ::ng-deep pagination-template > ul > li > a {
+    //                color: $grey-lighter;
+    //            }
+    //
+    //            &-wrapper {
+    //                background-color: $dark;
+    //            }
+    //
+    //            &-range {
+    //                & > #rowAmount > div > div {
+    //                    color: $grey;
+    //                    border: 1px solid $grey;
+    //                    background-color: $dark;
+    //                }
+    //
+    //                & > #rowAmount > div > ul {
+    //                    color: $grey;
+    //                    background-color: $dark;
+    //                }
+    //
+    //                & > #rowAmount > div > ul > li {
+    //                    color: $grey;
+    //                    background-color: $dark;
+    //                }
+    //            }
+    //        }
+    //    }
+    //
+    //    &__header-title {
+    //        display: inline;
+    //    }
+    //}
+
+    &-menu {
+        background: #fff;
+        border: 1px solid $grey;
+        list-style: none;
+        margin: 0;
+        min-width: 60px;
+        z-index: 100;
+    }
+
+    &-form-icon {
+        border-radius: .1rem;
+        background: #fff;
+        height: .9rem;
+        left: 0;
+        top: .2rem;
+        width: .9rem;
+        transition: all .2s ease;
+        border: .05rem solid $grey;
+        cursor: pointer;
+        display: inline-block;
+        position: absolute;
+    }
+
+    &-form-checkbox {
+        line-height: 1rem;
+        margin: 0.2rem 0;
+        min-height: 1.2rem;
+        padding: 0.2rem .4rem 0.4rem 1.6rem;
+        position: relative;
+
+        input {
+            clip: rect(0, 0, 0, 0);
+            height: 1px;
+            margin: -1px;
+            overflow: hidden;
+            position: absolute;
+            width: 1px;
+
+            &:focus + .ngx-form-icon {
+                box-shadow: 0 0 0 .1rem rgba($blue, .2);
+                border-color: $blue;
+            }
+
+            &:checked + .ngx-form-icon {
+                background: $blue;
+                border-color: $blue;
+            }
+
+            &:active + .ngx-form-icon {
+                background: $dark;
+            }
+
+            &:checked + .ngx-form-icon {
+                &::before {
+                    background-clip: padding-box;
+                    border: .1rem solid #fff;
+                    border-left-width: 0;
+                    border-top-width: 0;
+                    content: "";
+                    height: 12px;
+                    left: 50%;
+                    margin-left: -3px;
+                    margin-top: -8px;
+                    position: absolute;
+                    top: 50%;
+                    transform: rotate(45deg);
+                    width: 6px;
+                }
+            }
+        }
+    }
+
+    &-icon {
+        box-sizing: border-box;
+        cursor: pointer;
+        display: inline-block;
+        font-size: inherit;
+        font-style: normal;
+        height: 1em;
+        position: relative;
+        text-indent: -9999px;
+        vertical-align: middle;
+        width: 1em;
+
+        &::before, &::after {
+            content: "";
+            display: block;
+            left: 50%;
+            position: absolute;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+
+    &-icon-arrow-down::before, &-icon-arrow-right::before, &-icon-arrow-up::before {
+        border: .1rem solid $dark;
+        border-bottom: 0;
+        border-right: 0;
+        height: .65em;
+        width: .65em
+    }
+
+    &-icon-arrow-down::before {
+        transform: translate(-50%, -75%) rotate(225deg);
+    }
+
+    &-icon-arrow-right::before {
+        transform: translate(-75%, -50%) rotate(135deg);
+    }
+
+    &-icon-arrow-up::before {
+        transform: translate(-50%, -25%) rotate(45deg);
+    }
+
+    &-icon-menu::before {
+        background: $dark;
+        box-shadow: 0 -.35em, 0 .35em;
+        content: "";
+        height: .1rem;
+        width: 100%;
+    }
+
+    &-icon-pin {
+        border-radius: 50%;
+        border: 4px solid $dark;
+        width: 11px;
+        height: 11px;
+    }
+
+    &-icon-more::before {
+        background: $dark;
+        border-radius: 50%;
+        box-shadow: 0 -.4em, 0 .4em;
+        height: 3px;
+        width: 3px
+    }
+
+    &-dropdown {
+        display: inline;
+        position: relative;
+        float: right;
+
+        .ngx-menu {
+            position: absolute;
+            top: 100%;
+            right: 0;
+            left: auto;
+        }
+
+        a {
+            color: $primary-color;
+        }
+    }
+
+    &-btn-group {
+        display: inline;
+    }
+
+    &-draggable-row {
+        cursor: move;
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.cdk-drag-preview {
+    box-sizing: border-box;
+    border-radius: 1px;
+    box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2),
+    0 8px 10px 1px rgba(0, 0, 0, 0.14),
+    0 3px 14px 2px rgba(0, 0, 0, 0.12);
+    background-color: white;
+    padding-top: 9px;
+    padding-left: 4px;
+    display: table;
+    table-layout: fixed
+}
+
+.cdk-drag-placeholder {
+    opacity: 0;
+}
+
+.cdk-drag-animating {
+    transition: transform 150ms cubic-bezier(0, 0, 0.2, 1);
+}
+
+.ngx-draggable-row-area.cdk-drop-list-dragging .ngx-draggable-row:not(.cdk-drag-placeholder) {
+    transition: transform 150ms cubic-bezier(0, 0, 0.2, 1);
+}
+
+.ngx-table__header-cell--draggable {
+    cursor: move;
+    background-color: white;
+}
+
+.ngx-table__header--draggable.cdk-drop-list-dragging .ngx-table__header-cell--draggable:not(.cdk-drag-placeholder) {
+    transition: transform 150ms cubic-bezier(0, 0, 0.2, 1);
+}
+
+.ngx-pagination {
+
+    display: inline-block;
+    margin-left: 0;
+    margin-bottom: 1rem;
+    -webkit-padding-start: 0;
+    -webkit-margin-before: 0;
+}
+
+.ngx-pagination::before, .ngx-pagination::after {
+    content: ' ';
+    display: table;
+}
+
+.ngx-pagination::after {
+    clear: both;
+}
+
+.ngx-pagination li {
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    margin-right: 0.0625rem;
+    border-radius: 0;
+    border: 1px solid $grey;
+}
+
+.ngx-pagination li.current {
+    border: 1px solid $dark;
+}
+
+.ngx-pagination li {
+    display: inline-block;
+}
+
+.ngx-pagination a,
+.ngx-pagination button {
+    color: $dark;
+    display: block;
+    padding: 0.1875rem 0.625rem;
+    border-radius: 0;
+}
+
+.ngx-pagination a:hover,
+.ngx-pagination button:hover {
+    background: #e6e6e6;
+}
+
+.ngx-pagination .current {
+    padding: 0.1875rem 0.625rem;
+    background: $blue;
+    color: #fefefe;
+    cursor: default;
+}
+
+.ngx-pagination .disabled {
+    padding: 0.1875rem 0.625rem;
+    color: #cacaca;
+    cursor: default;
+}
+
+.ngx-pagination .disabled:hover {
+    background: transparent;
+}
+
+.ngx-pagination a, .ngx-pagination button {
+    cursor: pointer;
+}
+
+.ngx-pagination .pagination-previous a::before,
+.ngx-pagination .pagination-previous.disabled::before {
+    content: '«';
+    display: inline-block;
+    margin-right: 0.5rem;
+}
+
+.ngx-pagination .pagination-next a::after,
+.ngx-pagination .pagination-next.disabled::after {
+    content: '»';
+    display: inline-block;
+    margin-left: 0.5rem;
+}
+
+.ngx-pagination .show-for-sr {
+    position: absolute !important;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+}
+
+.ngx-pagination .small-screen {
+    display: none;
+}
+
+.ngx-pagination-wrapper {
+    margin-top: 8px;
+}
+
+.ngx-pagination-range {
+    display: inline-block;
+    float: right;
+}
+
+.ngx-pagination-steps {
+    display: inline-block;
+}
+
+.ngx-pagination-range-dropdown {
+    margin-top: 0;
+}
+
+.ngx-pagination-range-dropdown-button-item {
+    cursor: pointer;
+    color: $primary-color;
+    padding: 0.4rem;
+}
+
+.ngx-pagination-range--selected {
+    background-color: $grey-lighter;
+}
+
+.ngx-pagination-range-dropdown-button {
+    color: $primary-color;
+    border: 1px solid $grey;
+    cursor: pointer;
+    padding: 4px;
+}
+
+.pinned-left {
+    position: sticky;
+    z-index: 1;
+    background-color: white;
+    box-shadow: 2px 0 0 rgba(gray, .175);
+}
+
+@media screen and (max-width: 601px) {
+    .ngx-pagination.responsive .small-screen {
+        display: inline-block;
+        padding: 0.1875rem 0.625rem;
+        border-radius: 0;
+    }
+    .ngx-pagination.responsive li:not(.small-screen):not(.pagination-previous):not(.pagination-next) {
+        display: none;
+    }
+}
+
+.ngx-infinite-scroll-viewport {
+    display: block;
+    height: 250px;
+    overflow: auto;
+}
+
+.ngx-infinite-scroll-viewport tr,
+.ngx-infinite-scroll-viewport-thead {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+}
+.delete-button{
+    background: #ec4c4c
+}
+
+.duplicate-row{
+    background: #e4e4e4;
+}
+
+
+.leader-line {
+  z-index:111;
+}
+
+.activeKpi{
+    background: #94a3b8;
+}
+
+.activeKpi div{
+    color:white !important;
+}
+.activeKpi circle{
+    border:2px solid #ffffff !important;
+}
+textPath {
+    font-size: 13px;
+    font-weight: 600;
+}
+
+
+.ag-theme-quartz {
+    --ag-border-color: #D0D0D078;
+    --ag-header-background-color: #066BC9;
+    --ag-header-text-color: #FFFFFF;
+    --ag-header-font-size: 14px;
+    --ag-header-font-family: "Open Sans", sans-serif;
+    --ag-column-border: 1px solid var(--ag-border-color);
+    --ag-row-border: 1px solid var(--ag-border-color);
+}
+
+.skeleton-loading{
+    margin-bottom: 4px;
+    background: linear-gradient(90deg, #eef1f6 25%, #d8dde6 50%, #eef1f6 75%);
+    background-size: 200% 100%;
+    margin-left:5px;
+    animation: skeleton-loading 3s infinite linear;
+    border-radius: 2px; /* Optional for smoother edges */
+}
+
+
+@keyframes skeleton-loading {
+    0% {
+        background-position: 200% 0;
+    }
+    100% {
+        background-position: -200% 0;
+    }
+}
+
+
+.mat-menu-panel {
+    width: 360px !important;
+    max-width: inherit !important;
+}
+
+.app-custom-maps-add{
+    width:100%
+}
+
+
+::ng-deep input[type="time"].mat-input-element {
+  padding: 0.5rem 0 !important;  /* match other inputs */
+  height: 40px !important;       /* same as mat-input */
+  line-height: 1.5 !important;
+  box-sizing: border-box;
+}
+
+.mat-form-field-infix-custom{
+    height:60px !important;
+}
+
+
+
+.mat-form-field-infix{
+    font-weight: 500;
+}
+
+.mat-form-field-appearance-outline .mat-form-field-wrapper {
+    margin: 0px;
+}
+
+
+
+body.light .mat-form-field-label, body .light .mat-form-field-label {
+    color: rgb(0 0 0);
+    font-weight: 500;
+}
+
+::ng-deep .custom-tabs .mat-tab-label {
+    @apply text-gray-600 font-medium px-6 py-3 transition-all duration-200;
+}
+
+::ng-deep .custom-tabs .mat-tab-label:hover {
+    @apply text-blue-600;
+}
+
+::ng-deep .custom-tabs .mat-tab-label-active {
+    @apply text-blue-700 border-b-2 border-blue-700;
+}
+
+::ng-deep .custom-tabs .mat-ink-bar {
+    @apply bg-blue-700;
+}
