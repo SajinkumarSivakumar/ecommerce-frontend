@@ -1,0 +1,150 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BODY */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #f5f5f5;
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #131921;
+  color: white;
+  padding: 10px 15px;
+  gap: 10px;
+}
+
+/* LEFT */
+.left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* MENU BUTTON */
+.menu-btn {
+  font-size: 22px;
+  cursor: pointer;
+}
+
+/* LOGO */
+.logo {
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffd814;
+}
+
+/* SEARCH */
+.search {
+  flex: 1;
+  padding: 8px 12px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  max-width: 500px;
+}
+
+/* RIGHT */
+.nav-links {
+  display: flex;
+  align-items: center;
+}
+
+.cart {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* HERO */
+.hero {
+  background: linear-gradient(to right, #ff512f, #dd2476);
+  color: white;
+  text-align: center;
+  padding: 15px 10px;
+}
+
+.hero h1 {
+  font-size: 22px;
+}
+
+.hero p {
+  font-size: 13px;
+}
+
+/* SIDEBAR */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -260px;
+  width: 260px;
+  height: 100%;
+  background: #1f2a36;
+  color: white;
+  transition: 0.3s;
+  z-index: 2000;
+}
+
+.sidebar.active {
+  left: 0;
+}
+
+/* SIDEBAR HEADER */
+.sidebar-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  border-bottom: 1px solid #444;
+}
+
+/* MENU */
+.menu {
+  padding: 10px;
+}
+
+.menu-item {
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 5px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.menu-item:hover {
+  background: rgba(255,255,255,0.1);
+}
+
+/* OVERLAY */
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.4);
+  z-index: 1500;
+}
+
+/* 🔥 MOBILE RESPONSIVE */
+@media (max-width: 768px) {
+
+  .search {
+    display: none; /* mobile la hide pannalam */
+  }
+
+  .logo {
+    font-size: 16px;
+  }
+
+  .hero h1 {
+    font-size: 18px;
+  }
+
+  .hero p {
+    font-size: 12px;
+  }
+}

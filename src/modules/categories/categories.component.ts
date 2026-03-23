@@ -2,12 +2,12 @@ import {Component, OnInit} from '@angular/core';
 
 @Component({
     selector:'app-product',
-    templateUrl:'./product.component.html',
-    styleUrls:['product.component.scss'],
+    templateUrl:'./categories.component.html',
+    styleUrls:['categories.component.scss'],
 })
 
 
-export class ProductComponent implements OnInit {
+export class CategoriesComponent implements OnInit {
 
     constructor() {
     }

@@ -13,9 +13,10 @@ import {MatDatepickerModule} from '@angular/material/datepicker';
 import {AgGridModule} from 'ag-grid-angular';
 import {LoginComponent} from '../modules/auth/login/login.component';
 import {RegistrationComponent} from '../modules/auth/registration/registartion.component';
-import {ProductComponent} from '../modules/products/product.component';
+import {CategoriesComponent} from '../modules/categories/categories.component';
 import {AuthGuard} from '../modules/auth/auth.guard';
 import {AuthInterceptor} from "../modules/auth/auth.interceptor";
+import {CommonComponent} from "../modules/common/common.component";
 
 
 const routes: Routes = [
@@ -31,7 +32,7 @@ const routes: Routes = [
 
     {
         path:'product',
-        component:ProductComponent,
+        component:CategoriesComponent,
         canActivate: [AuthGuard]
     }
 
@@ -44,7 +45,7 @@ const routes: Routes = [
         AppComponent,
         LoginComponent,
         RegistrationComponent,
-        ProductComponent
+        CategoriesComponent
     ],
     imports: [
         FormsModule,
@@ -61,6 +62,7 @@ const routes: Routes = [
         ReactiveFormsModule,
         MatDatepickerModule,
         AgGridModule,
+        CommonComponent,
     ],
     providers: [
         {

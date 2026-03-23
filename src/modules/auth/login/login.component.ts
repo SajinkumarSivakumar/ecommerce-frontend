@@ -2,6 +2,7 @@ import {Component, OnInit} from '@angular/core';
 import {AuthService} from '../auth.service';
 import {FormBuilder, FormGroup, Validators} from '@angular/forms';
 import {Router} from '@angular/router';
+import Swal from 'sweetalert2';
 
 @Component({
     selector:'app-login',
@@ -13,6 +14,7 @@ export class LoginComponent implements OnInit {
     showPassword: boolean;
     loginForm!: FormGroup;
     isLoading = false;
+
 
     constructor(private authService: AuthService,private fb: FormBuilder,private route: Router) {
     }
@@ -34,8 +36,17 @@ export class LoginComponent implements OnInit {
         this.authService.login(this.loginForm.value).subscribe({
             next:(res: any)=>{
                 localStorage.setItem('token', res.access_token);
-                alert('Login Successful');
-                this.route.navigateByUrl('product');
+                 Swal.fire({
+                    title: 'Login Successful',
+                    text: 'Welcome back!',
+                    icon: 'success',
+                    confirmButtonText: 'OK'
+                }).then((result)=>{
+                     if(result.isConfirmed){
+                         this.route.navigateByUrl('product');
+                     }
+                 })
+
                 this.isLoading = false;
 
             },

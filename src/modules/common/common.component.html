@@ -1,0 +1,39 @@
+<header class="navbar">
+
+
+    <div class="left">
+        <div class="menu-btn" (click)="toggleSidebar()">☰</div>
+        <div class="logo">🛍️ ShopEase</div>
+    </div>
+
+
+    <input type="text" placeholder="Search products..." class="search">
+
+
+    <div class="nav-links">
+        <span class="cart">🛒</span>
+    </div>
+
+</header>
+
+
+
+<div class="sidebar" [class.active]="isSidebarOpen">
+
+    <div class="sidebar-header">
+        <span>🛍️ ShopEase</span>
+        <span class="close-btn menu-btn" (click)="toggleSidebar()">✖</span>
+    </div>
+
+    <div class="menu">
+        <div class="menu-item" (click)="navigateToHome()">🏠 Home</div>
+        <div class="menu-item" (click)="navigateToOrders()">📦 Products</div>
+        <div class="menu-item" (click)="navigateToOrders()">📦 Orders</div>
+        <div class="menu-item" (click)="navigateToWishlist()">❤️ Wishlist</div>
+        <div class="menu-item" (click)="navigateToSettings()">⚙️ Settings</div>
+    </div>
+
+</div>
+
+
+<div class="overlay" *ngIf="isSidebarOpen" (click)="toggleSidebar()"></div>
