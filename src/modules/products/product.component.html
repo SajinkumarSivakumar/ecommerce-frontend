@@ -1,0 +1,61 @@
+<div>
+    <app-common></app-common>
+</div>
+
+
+<div class="upload-container">
+
+    <div class="upload-card">
+
+        <div class="upload-title">📤 Upload File</div>
+
+        <div class="dropdown-container">
+            <label>Select Type</label>
+            <select [(ngModel)]="selectedType" class="dropdown">
+                <option value="">-- Select --</option>
+                <option value="category">Category</option>
+                <option value="product">Product</option>
+            </select>
+        </div>
+
+        <div class="dropdown-container">
+            <label>Enter Name</label>
+            <input
+                    type="text"
+                    [(ngModel)]="inputValue"
+                    placeholder="Enter category/product name"
+                    class="input-box"
+            />
+        </div>
+
+        <div
+                class="upload-box"
+                (click)="fileInput.click()"
+                (dragover)="onDragOver($event)"
+                (drop)="onDrop($event)"
+        >
+            <input type="file" #fileInput hidden (change)="onFileSelected($event)" />
+
+            <div class="upload-icon">📁</div>
+            <div class="upload-text">Drag & Drop your file</div>
+            <div class="upload-subtext">or click to browse</div>
+        </div>
+
+        <!-- Preview -->
+        <div *ngIf="selectedFile" class="file-preview">
+            <span class="file-name">{{ selectedFile.name }}</span>
+            <span class="remove-btn" (click)="removeFile()">✖</span>
+        </div>
+
+        <!-- Button -->
+        <button
+                class="upload-btn"
+                [disabled]="!selectedFile"
+                (click)="uploadFile()"
+        >
+            🚀 Upload
+        </button>
+
+    </div>
+
+</div>

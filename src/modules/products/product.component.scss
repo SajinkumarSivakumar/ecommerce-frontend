@@ -1,0 +1,251 @@
+/* 🌈 Background with image overlay */
+.upload-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background:
+          linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+          url('https://images.unsplash.com/photo-1441986300917-64674bd600d8?q=80&w=1920&auto=format&fit=crop');
+  background-size: cover;
+  background-position: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* 🧊 Glass Card */
+.upload-card {
+  width: 420px;
+  padding: 30px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255,255,255,0.2);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+  text-align: center;
+  color: #fff;
+  animation: fadeIn 0.6s ease;
+}
+
+/* ✨ Title */
+.upload-title {
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+
+/* 🔽 Dropdown */
+.dropdown-container {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.dropdown-container label {
+  font-size: 13px;
+  margin-bottom: 6px;
+  display: block;
+  color: #e5e7eb;
+}
+
+.dropdown {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  background: rgba(255,255,255,0.2);
+  color: #fff;
+  backdrop-filter: blur(10px);
+  transition: 0.3s;
+}
+
+.dropdown option {
+  color: #000;
+}
+
+.dropdown:hover {
+  background: rgba(255,255,255,0.3);
+}
+
+/* 📦 Upload Box */
+.upload-box {
+  border: 2px dashed rgba(255,255,255,0.5);
+  border-radius: 15px;
+  padding: 35px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.upload-box:hover {
+  border-color: #60a5fa;
+  background: rgba(255,255,255,0.1);
+  transform: translateY(-3px);
+}
+
+/* 📁 Icon */
+.upload-icon {
+  font-size: 45px;
+  margin-bottom: 10px;
+}
+
+/* 📝 Text */
+.upload-text {
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.upload-subtext {
+  font-size: 12px;
+  color: #d1d5db;
+}
+
+/* 📄 File Preview */
+.file-preview {
+  margin-top: 20px;
+  padding: 12px;
+  border-radius: 10px;
+  background: rgba(255,255,255,0.2);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.file-name {
+  font-size: 14px;
+}
+
+.remove-btn {
+  color: #ff6b6b;
+  cursor: pointer;
+  font-size: 18px;
+  transition: 0.2s;
+}
+
+.remove-btn:hover {
+  transform: scale(1.2);
+}
+
+/* 🚀 Button */
+.upload-btn {
+  margin-top: 20px;
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: 12px;
+  background: linear-gradient(90deg, #ff7eb3, #7eaaff);
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.upload-btn:hover {
+  transform: translateY(-2px) scale(1.03);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+.upload-btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  width: 300px;
+}
+
+/* Label */
+.input-container label {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #333;
+}
+
+/* Input Box */
+.input-box {
+  padding: 12px 14px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+  outline: none;
+  transition: all 0.3s ease;
+  background: #f9f9f9;
+}
+
+/* Hover effect */
+.input-box:hover {
+  border-color: #888;
+  background: #fff;
+}
+
+/* Focus effect */
+.input-box:focus {
+  border-color: #007bff;
+  background: #fff;
+  box-shadow: 0 0 0 3px rgba(0,123,255,0.2);
+}
+
+/* Placeholder style */
+.input-box::placeholder {
+  color: #aaa;
+}
+
+/* Responsive */
+@media (max-width: 500px) {
+  .input-container {
+    width: 100%;
+  }
+}
+
+
+
+.input-box {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,0.25);
+  font-size: 14px;
+  outline: none;
+  color: #fff;
+
+  /* ✅ Proper glass */
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+
+  transition: all 0.25s ease;
+}
+
+/* Placeholder */
+.input-box::placeholder {
+  color: rgba(255,255,255,0.6);
+}
+
+/* Hover */
+.input-box:hover {
+  background: rgba(255,255,255,0.12);
+  border-color: rgba(255,255,255,0.4);
+}
+
+/* Focus (smooth, not too bright) */
+.input-box:focus {
+  border-color: #7eaaff;
+  background: rgba(255,255,255,0.15);
+  box-shadow: 0 0 0 2px rgba(126,170,255,0.25);
+}
+
+/* 🎬 Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

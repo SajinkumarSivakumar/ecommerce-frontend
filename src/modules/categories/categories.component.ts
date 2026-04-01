@@ -1,4 +1,5 @@
 import {Component, OnInit} from '@angular/core';
+import {MasterService} from "../master.service";
 
 @Component({
     selector:'app-product',
@@ -9,8 +10,15 @@ import {Component, OnInit} from '@angular/core';
 
 export class CategoriesComponent implements OnInit {
 
-    constructor() {
+    categories:any =[];
+
+    constructor(private ms:MasterService) {
     }
     ngOnInit():void {
+        this.ms.getCategoryItems().subscribe((res:any) =>{
+
+            this.categories = res.data;
+        })
+
     }
 }

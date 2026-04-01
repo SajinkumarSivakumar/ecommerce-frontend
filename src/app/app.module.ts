@@ -15,8 +15,10 @@ import {LoginComponent} from '../modules/auth/login/login.component';
 import {RegistrationComponent} from '../modules/auth/registration/registartion.component';
 import {CategoriesComponent} from '../modules/categories/categories.component';
 import {AuthGuard} from '../modules/auth/auth.guard';
-import {AuthInterceptor} from "../modules/auth/auth.interceptor";
-import {CommonComponent} from "../modules/common/common.component";
+import {AuthInterceptor} from '../modules/auth/auth.interceptor';
+import {CommonComponent} from '../modules/common/common.component';
+import {ProductComponent} from '../modules/products/product.component';
+import {MasterService} from '../modules/master.service';
 
 
 const routes: Routes = [
@@ -31,8 +33,13 @@ const routes: Routes = [
     },
 
     {
-        path:'product',
+        path:'category',
         component:CategoriesComponent,
+        canActivate: [AuthGuard]
+    },
+    {
+        path:'product',
+        component:ProductComponent,
         canActivate: [AuthGuard]
     }
 
@@ -45,7 +52,8 @@ const routes: Routes = [
         AppComponent,
         LoginComponent,
         RegistrationComponent,
-        CategoriesComponent
+        CategoriesComponent,
+        ProductComponent
     ],
     imports: [
         FormsModule,
@@ -65,6 +73,7 @@ const routes: Routes = [
         CommonComponent,
     ],
     providers: [
+        MasterService,
         {
             provide:HTTP_INTERCEPTORS,
             useClass: AuthInterceptor,

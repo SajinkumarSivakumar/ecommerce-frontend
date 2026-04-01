@@ -18,7 +18,7 @@
 </section>
 
 <!-- PRODUCT CATEGORY CARDS -->
-<section class="categories" style="display:grid;grid-template-columns: repeat(6, 1fr);gap:20px;padding:20px; max-width:1500px; margin:auto;">
+<section *ngFor="let list of categories" class="categories" style="display:grid;grid-template-columns: repeat(6, 1fr);gap:20px;padding:20px; max-width:1500px; margin:auto;">
 
     <div class="card" style="width:230px; background:#fff; border-radius:12px; padding:15px; text-align:center; box-shadow:0 4px 10px rgba(0,0,0,0.1); transition:0.3s;">
 
@@ -26,7 +26,7 @@
             Men Slim Fit Checkered Slim Collar Casual Shirt
         </h3>
 
-        <img src="https://rukminim2.flixcart.com/image/480/580/xif0q/shirt/w/n/p/l-47-mr-enterprise-original-imagzr65asjaghhv.jpeg?q=90"
+        <img [src]="'http://localhost:3000/uploads/' + list.fileName"
              style="width:100%; height:220px; object-fit:contain; border-radius:8px;" />
 
         <p style="margin-top:10px; font-weight:500; color:#777;">
@@ -36,182 +36,182 @@
     </div>
 
 
-    <div class="card" style="width:230px; background:#fff; border-radius:12px; padding:15px; text-align:center; box-shadow:0 4px 10px rgba(0,0,0,0.1);">
+<!--    <div class="card" style="width:230px; background:#fff; border-radius:12px; padding:15px; text-align:center; box-shadow:0 4px 10px rgba(0,0,0,0.1);">-->
 
-        <h3 style="font-size:16px; margin-bottom:10px; color:#333;">
-            Men T-shirt
-        </h3>
+<!--        <h3 style="font-size:16px; margin-bottom:10px; color:#333;">-->
+<!--            Men T-shirt-->
+<!--        </h3>-->
 
-        <img src="https://urbantheka.in/cdn/shop/files/DSC01342-1.jpg?v=1711966353"
-             style="width:100%; height:220px; object-fit:contain; border-radius:8px;" />
+<!--        <img src="https://urbantheka.in/cdn/shop/files/DSC01342-1.jpg?v=1711966353"-->
+<!--             style="width:100%; height:220px; object-fit:contain; border-radius:8px;" />-->
 
-        <p style="margin-top:10px; font-weight:500; color:#777;">
-            Brown Munde T-shirt XS
-        </p>
+<!--        <p style="margin-top:10px; font-weight:500; color:#777;">-->
+<!--            Brown Munde T-shirt XS-->
+<!--        </p>-->
 
-    </div>
+<!--    </div>-->
 
 
-    <div class="card" style="width:230px; background:#fff; border-radius:12px; padding:15px; text-align:center; box-shadow:0 4px 10px rgba(0,0,0,0.1);">
+<!--    <div class="card" style="width:230px; background:#fff; border-radius:12px; padding:15px; text-align:center; box-shadow:0 4px 10px rgba(0,0,0,0.1);">-->
 
-        <h3 style="font-size:16px; margin-bottom:10px; color:#333;">
-            Men Jeans Pant
-        </h3>
+<!--        <h3 style="font-size:16px; margin-bottom:10px; color:#333;">-->
+<!--            Men Jeans Pant-->
+<!--        </h3>-->
 
-        <img src="https://plus.unsplash.com/premium_photo-1674828601362-afb73c907ebe"
-             style="width:100%; height:220px; object-fit:contain; border-radius:8px;" />
+<!--        <img src="https://plus.unsplash.com/premium_photo-1674828601362-afb73c907ebe"-->
+<!--             style="width:100%; height:220px; object-fit:contain; border-radius:8px;" />-->
 
-        <p style="margin-top:10px; font-weight:500; color:#777;">
-            Top's Jeans Pant
-        </p>
+<!--        <p style="margin-top:10px; font-weight:500; color:#777;">-->
+<!--            Top's Jeans Pant-->
+<!--        </p>-->
 
-    </div>
+<!--    </div>-->
 
 
-    <div class="card" style="width:230px; background:#fff; border-radius:12px; padding:15px; text-align:center; box-shadow:0 4px 10px rgba(0,0,0,0.1);">
+<!--    <div class="card" style="width:230px; background:#fff; border-radius:12px; padding:15px; text-align:center; box-shadow:0 4px 10px rgba(0,0,0,0.1);">-->
 
-        <h3 style="font-size:16px; margin-bottom:10px; color:#333;">
-            Men Vest Versatile Cotton Santo
-        </h3>
+<!--        <h3 style="font-size:16px; margin-bottom:10px; color:#333;">-->
+<!--            Men Vest Versatile Cotton Santo-->
+<!--        </h3>-->
 
-        <img src="https://trendtronee.ronishainformatics.com/public/assets/app/public/product/1469487608.jpg"
-             style="width:100%; height:220px; object-fit:contain; border-radius:8px;" />
+<!--        <img src="https://trendtronee.ronishainformatics.com/public/assets/app/public/product/1469487608.jpg"-->
+<!--             style="width:100%; height:220px; object-fit:contain; border-radius:8px;" />-->
 
-        <p style="margin-top:10px; font-weight:500; color:#777;">
-            Men Vest
-        </p>
+<!--        <p style="margin-top:10px; font-weight:500; color:#777;">-->
+<!--            Men Vest-->
+<!--        </p>-->
 
-    </div>
+<!--    </div>-->
 
 
 
-    <div class="card" style="width:230px; background:#fff; border-radius:12px; padding:15px; text-align:center; box-shadow:0 4px 10px rgba(0,0,0,0.1);">
+<!--    <div class="card" style="width:230px; background:#fff; border-radius:12px; padding:15px; text-align:center; box-shadow:0 4px 10px rgba(0,0,0,0.1);">-->
 
-        <h3 style="font-size:16px; margin-bottom:10px; color:#333;">
-            Men Suit Slim
-        </h3>
+<!--        <h3 style="font-size:16px; margin-bottom:10px; color:#333;">-->
+<!--            Men Suit Slim-->
+<!--        </h3>-->
 
-        <img src="https://m.media-amazon.com/images/I/61rJza2EovL._AC_UY1100_.jpg"
-             style="width:100%; height:220px; object-fit:contain; border-radius:8px;" />
+<!--        <img src="https://m.media-amazon.com/images/I/61rJza2EovL._AC_UY1100_.jpg"-->
+<!--             style="width:100%; height:220px; object-fit:contain; border-radius:8px;" />-->
 
-        <p style="margin-top:10px; font-weight:500; color:#777;">
-           Party Jacket
-        </p>
+<!--        <p style="margin-top:10px; font-weight:500; color:#777;">-->
+<!--           Party Jacket-->
+<!--        </p>-->
 
-    </div>
+<!--    </div>-->
 
 
-    <div class="card" style="width:230px; background:#fff; border-radius:12px; padding:15px; text-align:center; box-shadow:0 4px 10px rgba(0,0,0,0.1);">
+<!--    <div class="card" style="width:230px; background:#fff; border-radius:12px; padding:15px; text-align:center; box-shadow:0 4px 10px rgba(0,0,0,0.1);">-->
 
-        <h3 style="font-size:16px; margin-bottom:10px; color:#333;">
-           Full Sleeves Cricket Sports jersey
-        </h3>
+<!--        <h3 style="font-size:16px; margin-bottom:10px; color:#333;">-->
+<!--           Full Sleeves Cricket Sports jersey-->
+<!--        </h3>-->
 
-        <img src="https://m.media-amazon.com/images/I/61R+1DNsdUL._AC_UY1100_.jpg"
-             style="width:100%; height:220px; object-fit:contain; border-radius:8px;" />
+<!--        <img src="https://m.media-amazon.com/images/I/61R+1DNsdUL._AC_UY1100_.jpg"-->
+<!--             style="width:100%; height:220px; object-fit:contain; border-radius:8px;" />-->
 
-        <p style="margin-top:10px; font-weight:500; color:#777;">
-            Sports jersey
-        </p>
+<!--        <p style="margin-top:10px; font-weight:500; color:#777;">-->
+<!--            Sports jersey-->
+<!--        </p>-->
 
-    </div>
+<!--    </div>-->
 
-    <div class="card" style="width:230px; background:#fff; border-radius:12px; padding:15px; text-align:center; box-shadow:0 4px 10px rgba(0,0,0,0.1);">
+<!--    <div class="card" style="width:230px; background:#fff; border-radius:12px; padding:15px; text-align:center; box-shadow:0 4px 10px rgba(0,0,0,0.1);">-->
 
-        <h3 style="font-size:16px; margin-bottom:10px; color:#333;">
-            Mens Formal Shirt Pant Combo
-        </h3>
+<!--        <h3 style="font-size:16px; margin-bottom:10px; color:#333;">-->
+<!--            Mens Formal Shirt Pant Combo-->
+<!--        </h3>-->
 
-        <img src="https://blackships.in/cdn/shop/files/ChatGPTImageApr17_2025_02_08_38PM.png?v=1746096332"
-             style="width:100%; height:220px; object-fit:contain; border-radius:8px;" />
+<!--        <img src="https://blackships.in/cdn/shop/files/ChatGPTImageApr17_2025_02_08_38PM.png?v=1746096332"-->
+<!--             style="width:100%; height:220px; object-fit:contain; border-radius:8px;" />-->
 
-        <p style="margin-top:10px; font-weight:500; color:#777;">
-            Formal Shirt Pant
-        </p>
+<!--        <p style="margin-top:10px; font-weight:500; color:#777;">-->
+<!--            Formal Shirt Pant-->
+<!--        </p>-->
 
-    </div>
+<!--    </div>-->
 
 
 
-    <div class="card" style="width:230px; background:#fff; border-radius:12px; padding:15px; text-align:center; box-shadow:0 4px 10px rgba(0,0,0,0.1);">
+<!--    <div class="card" style="width:230px; background:#fff; border-radius:12px; padding:15px; text-align:center; box-shadow:0 4px 10px rgba(0,0,0,0.1);">-->
 
-        <h3 style="font-size:16px; margin-bottom:10px; color:#333;">
-           Man Shoes Design
-        </h3>
+<!--        <h3 style="font-size:16px; margin-bottom:10px; color:#333;">-->
+<!--           Man Shoes Design-->
+<!--        </h3>-->
 
-        <img src="https://i.pinimg.com/736x/5e/6d/15/5e6d1545583cbb0450c4b4d7e46b98b2.jpg"
-             style="width:100%; height:220px; object-fit:contain; border-radius:8px;" />
+<!--        <img src="https://i.pinimg.com/736x/5e/6d/15/5e6d1545583cbb0450c4b4d7e46b98b2.jpg"-->
+<!--             style="width:100%; height:220px; object-fit:contain; border-radius:8px;" />-->
 
-        <p style="margin-top:10px; font-weight:500; color:#777;">
-            Sneakers Shoes
-        </p>
+<!--        <p style="margin-top:10px; font-weight:500; color:#777;">-->
+<!--            Sneakers Shoes-->
+<!--        </p>-->
 
-    </div>
+<!--    </div>-->
 
 
-    <div class="card" style="width:230px; background:#fff; border-radius:12px; padding:15px; text-align:center; box-shadow:0 4px 10px rgba(0,0,0,0.1);">
+<!--    <div class="card" style="width:230px; background:#fff; border-radius:12px; padding:15px; text-align:center; box-shadow:0 4px 10px rgba(0,0,0,0.1);">-->
 
-        <h3 style="font-size:16px; margin-bottom:10px; color:#333;">
-            Yellow Chimes Unisex Leather
-        </h3>
+<!--        <h3 style="font-size:16px; margin-bottom:10px; color:#333;">-->
+<!--            Yellow Chimes Unisex Leather-->
+<!--        </h3>-->
 
-        <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcTqyTc1WinbDZ-a3sBy2lzicc1KAkv0NGMQzfPYBdbmjFDbDk4paFEJQtUNSrE38JSi05v3AC0Nx_CqPIl65A5LxpWMNoKgWzyT3Cla7tDs5f8JAt7-GYNjgU0"
-             style="width:100%; height:220px; object-fit:contain; border-radius:8px;" />
+<!--        <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcTqyTc1WinbDZ-a3sBy2lzicc1KAkv0NGMQzfPYBdbmjFDbDk4paFEJQtUNSrE38JSi05v3AC0Nx_CqPIl65A5LxpWMNoKgWzyT3Cla7tDs5f8JAt7-GYNjgU0"-->
+<!--             style="width:100%; height:220px; object-fit:contain; border-radius:8px;" />-->
 
-        <p style="margin-top:10px; font-weight:500; color:#777;">
-            Bracelet
-        </p>
+<!--        <p style="margin-top:10px; font-weight:500; color:#777;">-->
+<!--            Bracelet-->
+<!--        </p>-->
 
-    </div>
+<!--    </div>-->
 
 
-    <div class="card" style="width:230px; background:#fff; border-radius:12px; padding:15px; text-align:center; box-shadow:0 4px 10px rgba(0,0,0,0.1);">
+<!--    <div class="card" style="width:230px; background:#fff; border-radius:12px; padding:15px; text-align:center; box-shadow:0 4px 10px rgba(0,0,0,0.1);">-->
 
-        <h3 style="font-size:16px; margin-bottom:10px; color:#333;">
-           IK Colouring  Men's Luxury
-        </h3>
+<!--        <h3 style="font-size:16px; margin-bottom:10px; color:#333;">-->
+<!--           IK Colouring  Men's Luxury-->
+<!--        </h3>-->
 
-        <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcSUzHnqKATjXXnXuPyB78Sfp4E_2tChHrkJOTz9JNZTI9A23DtF6MF8EQ5S60k66yjARRpBuVwxOsPEc4G17SFbBsMM9edrANi8NuNgAepAhU00iFNSpuICJ8M"
-             style="width:100%; height:220px; object-fit:contain; border-radius:8px;" />
+<!--        <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcSUzHnqKATjXXnXuPyB78Sfp4E_2tChHrkJOTz9JNZTI9A23DtF6MF8EQ5S60k66yjARRpBuVwxOsPEc4G17SFbBsMM9edrANi8NuNgAepAhU00iFNSpuICJ8M"-->
+<!--             style="width:100%; height:220px; object-fit:contain; border-radius:8px;" />-->
 
-        <p style="margin-top:10px; font-weight:500; color:#777;">
-          Men's Watches
-        </p>
+<!--        <p style="margin-top:10px; font-weight:500; color:#777;">-->
+<!--          Men's Watches-->
+<!--        </p>-->
 
-    </div>
+<!--    </div>-->
 
 
-    <div class="card" style="width:230px; background:#fff; border-radius:12px; padding:15px; text-align:center; box-shadow:0 4px 10px rgba(0,0,0,0.1);">
+<!--    <div class="card" style="width:230px; background:#fff; border-radius:12px; padding:15px; text-align:center; box-shadow:0 4px 10px rgba(0,0,0,0.1);">-->
 
-        <h3 style="font-size:16px; margin-bottom:10px; color:#333;">
-            Jack & Jones Men's Cotton Baseball Cap
-        </h3>
+<!--        <h3 style="font-size:16px; margin-bottom:10px; color:#333;">-->
+<!--            Jack & Jones Men's Cotton Baseball Cap-->
+<!--        </h3>-->
 
-        <img src="https://m.media-amazon.com/images/I/71e8aBdqqGL._SY741_.jpg"
-             style="width:100%; height:220px; object-fit:contain; border-radius:8px;" />
+<!--        <img src="https://m.media-amazon.com/images/I/71e8aBdqqGL._SY741_.jpg"-->
+<!--             style="width:100%; height:220px; object-fit:contain; border-radius:8px;" />-->
 
-        <p style="margin-top:10px; font-weight:500; color:#777;">
-            Baseball Cap
-        </p>
+<!--        <p style="margin-top:10px; font-weight:500; color:#777;">-->
+<!--            Baseball Cap-->
+<!--        </p>-->
 
-    </div>
+<!--    </div>-->
 
 
 
-    <div class="card" style="width:230px; background:#fff; border-radius:12px; padding:15px; text-align:center; box-shadow:0 4px 10px rgba(0,0,0,0.1);">
+<!--    <div class="card" style="width:230px; background:#fff; border-radius:12px; padding:15px; text-align:center; box-shadow:0 4px 10px rgba(0,0,0,0.1);">-->
 
-        <h3 style="font-size:16px; margin-bottom:10px; color:#333;">
-            Foxter Striped Men  black Grey Track
-        </h3>
+<!--        <h3 style="font-size:16px; margin-bottom:10px; color:#333;">-->
+<!--            Foxter Striped Men  black Grey Track-->
+<!--        </h3>-->
 
-        <img src="https://rukminim2.flixcart.com/image/1920/1920/xif0q/shopsy-track-pant/5/0/m/30-ptp-03-003-poplens-original-imahybhdtuz5shey.jpeg?q=90"
-             style="width:100%; height:220px; object-fit:contain; border-radius:8px;" />
+<!--        <img src="https://rukminim2.flixcart.com/image/1920/1920/xif0q/shopsy-track-pant/5/0/m/30-ptp-03-003-poplens-original-imahybhdtuz5shey.jpeg?q=90"-->
+<!--             style="width:100%; height:220px; object-fit:contain; border-radius:8px;" />-->
 
-        <p style="margin-top:10px; font-weight:500; color:#777;">
-           Men's Track
-        </p>
+<!--        <p style="margin-top:10px; font-weight:500; color:#777;">-->
+<!--           Men's Track-->
+<!--        </p>-->
 
-    </div>
+<!--    </div>-->
 
 
 </section>

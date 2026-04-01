@@ -43,7 +43,7 @@ export class LoginComponent implements OnInit {
                     confirmButtonText: 'OK'
                 }).then((result)=>{
                      if(result.isConfirmed){
-                         this.route.navigateByUrl('product');
+                         this.route.navigateByUrl('category');
                      }
                  })
 

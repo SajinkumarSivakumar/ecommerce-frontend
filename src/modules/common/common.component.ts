@@ -1,5 +1,7 @@
 import {Component, OnInit} from '@angular/core';
-import {NgIf} from "@angular/common";
+import {NgIf} from '@angular/common';
+import {Router} from '@angular/router';
+import {MasterService} from "../master.service";
 
 @Component({
     selector: 'app-common',
@@ -15,7 +17,7 @@ export class CommonComponent implements OnInit {
 
     isSidebarOpen: boolean = false;
 
-    constructor() {
+    constructor(private route: Router,private ms:MasterService) {
     }
     ngOnInit() {
     }
@@ -26,6 +28,12 @@ export class CommonComponent implements OnInit {
     }
 
     navigateToHome(){
+        this.route.navigateByUrl('/category');
+
+    }
+
+    navigateToCategories(){
+        this.route.navigateByUrl('/product');
 
     }
 
