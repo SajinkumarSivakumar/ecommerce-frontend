@@ -36,16 +36,19 @@ export class LoginComponent implements OnInit {
         this.authService.login(this.loginForm.value).subscribe({
             next:(res: any)=>{
                 localStorage.setItem('token', res.access_token);
-                 Swal.fire({
+                Swal.fire({
                     title: 'Login Successful',
                     text: 'Welcome back!',
                     icon: 'success',
-                    confirmButtonText: 'OK'
+                    confirmButtonText: 'OK',
+                    customClass: {
+                        popup: 'small-swal'
+                    }
                 }).then((result)=>{
-                     if(result.isConfirmed){
-                         this.route.navigateByUrl('category');
-                     }
-                 })
+                    if(result.isConfirmed){
+                        this.route.navigateByUrl('category');
+                    }
+                });
 
                 this.isLoading = false;
 

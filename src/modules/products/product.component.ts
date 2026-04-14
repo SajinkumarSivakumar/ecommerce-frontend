@@ -18,6 +18,9 @@ export class ProductComponent implements OnInit {
 
     ngOnInit() {
 
+        const token = localStorage.getItem('token');
+        console.log('tokenLogic',token)
+
     }
 
     onFileSelected(event: any) {

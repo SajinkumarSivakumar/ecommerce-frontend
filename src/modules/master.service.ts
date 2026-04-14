@@ -1,5 +1,5 @@
 import {Injectable} from '@angular/core';
-import {HttpClient} from '@angular/common/http';
+import {HttpClient, HttpHeaders} from '@angular/common/http';
 import {Observable} from 'rxjs';
 import {environment as env} from '../environments/environment';
 
@@ -19,4 +19,8 @@ export class MasterService {
     getCategoryItems(){
         return this.http.get(env.apiUrl + 'master/getCategories');
     }
+
+
+
+
 }
